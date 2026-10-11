@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Connexion TikTok</title>
+  <style>
+    body { font-family: system-ui, sans-serif; text-align: center; margin: 22vh 1rem 0; color: #161616; }
+    @media (prefers-color-scheme: dark) { body { background: #101010; color: #f1f1ef; } }
+    p { max-width: 460px; margin: 0 auto 12px; line-height: 1.5; }
+    .muted { opacity: .65; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <p id="msg">Retour vers l'application…</p>
+  <p class="muted" id="help" hidden>
+    Si rien ne se passe, l'application n'est pas lancée. Lance <code>python app.py</code>,
+    puis colle l'adresse de cette page dans l'application (« La connexion ne se termine pas toute seule ? »).
+  </p>
+  <script>
+    // Port de l'application locale (doit correspondre à PORT dans app.py)
+    var PORT = 8765;
+    // Transmet tels quels les paramètres de TikTok (code, state…) à l'application locale.
+    // Ce code à usage unique est inutilisable sans ton client secret, qui reste sur ton ordinateur.
+    setTimeout(function () { document.getElementById('help').hidden = false; }, 3000);
+    location.replace('http://localhost:' + PORT + '/callback' + location.search);
+  </script>
+</body>
+</html>
