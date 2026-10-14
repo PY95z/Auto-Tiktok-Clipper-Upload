@@ -161,5 +161,5 @@ L'URL enregistrée sur le portail TikTok doit correspondre exactement à celle d
 Ce projet est distribué sous licence MIT. Voir le fichier `LICENSE`.
 
 ## Auteurs
-Amine O
-Wissam O
+Amine O -- Wissam O
+
