@@ -20,6 +20,7 @@ Ce dépôt héberge la **page de redirection OAuth** (`callback.html`) utilisée
 - [Dépannage](#dépannage)
 - [Limites et avertissements](#limites-et-avertissements)
 - [Licence](#licence)
+- [Auteurs](#auteurs)
 
 ---
 
@@ -158,3 +159,7 @@ L'URL enregistrée sur le portail TikTok doit correspondre exactement à celle d
 
 <!-- À adapter : choisis une licence (ex. MIT) et ajoute un fichier LICENSE -->
 Ce projet est distribué sous licence MIT. Voir le fichier `LICENSE`.
+
+## Auteurs
+Amine O
+Wissam O
